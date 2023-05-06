@@ -24,7 +24,7 @@ export default function Food() {
   };
 
   return (
-    <div className="max-w-[1640px] m-auto px-4 py-12">
+    <div className="max-w-[1640px] m-auto px-4 py-6">
       <h1 className="text-orange-600 font-bold text-4xl text-center">
         Top Rated Menu Items
       </h1>
@@ -32,8 +32,8 @@ export default function Food() {
       <div className="flex flex-col lg:flex-row justify-between">
         {/* Filter Type */}
         <div>
-          <p className="font-bold text-white">Filter Type</p>
-          <div className="flex justify-between flex-wrap">
+          <p className="font-bold text-white mt-4">Filter Type</p>
+          <div className="flex justify-between flex-wrap mt-2">
             <button
               onClick={() => setFoods(data)}
               className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white duration-100 hover:scale-105"
@@ -67,9 +67,9 @@ export default function Food() {
           </div>
         </div>
         {/* Filter Price */}
-        <div>
+        <div className="mt-[2rem]">
           <p className="text-white font-bold">Filter Price</p>
-          <div className="flex justify-between max-w-[390px] w-full">
+          <div className="flex justify-between max-w-[390px] w-full mt-2">
             <button
               onClick={() => filterPrice("$")}
               className="m-1 border-white hover:bg-white hover:text-black hover:scale-105 duration-300"
