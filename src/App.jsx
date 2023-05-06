@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import HeaderCards from "./components/HeaderCards";
+import Food from "./components/Food";
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <NavBar />
       <Hero />
       <HeaderCards />
+      <Food />
     </div>
   );
 }
