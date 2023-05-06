@@ -1,7 +1,11 @@
-import {data} from "../data/data"
+import { data } from "../data/data"
+import { useState } from "react";
 
 export default function Food() {
-  console.log(data);
+  // console.log(data);
+
+  const [foods, setFoods] = useState(data)
+
   return (
     <div className="max-w-[1640px] m-auto px-4 py-12">
       <h1 className="text-orange-600 font-bold text-4xl text-center">Top Rated Menu Items</h1>
@@ -29,6 +33,7 @@ export default function Food() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }
